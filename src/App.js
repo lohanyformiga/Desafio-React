@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Titulo from './Components/Titulo'
+import Title from './Components/Title'
+import Texto from './Components/Texto'
+import UpperCase from './Components/UpperCase'
+import CapsLock from './Components/CapsLock'
+//import Tick from './Components/Tick'
+//import Card from './Components/Card'
+import Lista from './Components/Lista'
+//import OutraLista from './components/Card'
+//import Imagem from './components/imagem'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Titulo/>
+      <Title text="texto que veio da props"/>  
+      <Lista/>   
+      {/* <UpperCase texto="qualquer texto"/> */}
+      {/* <CapsLock>Área da programação</CapsLock> */}
+      {/* <Texto>Texto que veio do Children</Texto>       */}
+      {/* <Tick/> */}
+      {/* <Card/> */}
+      {/* <OutraLista/> */}
+
+    </div>   
+
   );
 }
 
